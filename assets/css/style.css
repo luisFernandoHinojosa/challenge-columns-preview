@@ -117,23 +117,9 @@ button{
     }
     .app-web{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        max-width: 720px;
-        place-content: center;
-    }
-    .tarjet-1{
-        border-radius: 10px 0 0 0;
-    }
-    .tarjet-2{
-        border-radius: 0 10px 10px 0;
-    }
-    
-}
-
-@media(min-width:1040px){
-    .app-web{
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 750px;
+        place-content: center;
     }
     .tarjet-1{
         border-radius: 10px 0 0 10px;
@@ -141,7 +127,9 @@ button{
     .tarjet-2{
         border-radius: 0;
     }
+
     .tarjet-3{
         border-radius: 0 10px 10px 0;
     }
+    
 }
