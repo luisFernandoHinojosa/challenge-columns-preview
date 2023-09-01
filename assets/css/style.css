@@ -1,0 +1,144 @@
+:root{
+    /*Colores primarios*/
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /*Neutral colors*/
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    /*Typography*/
+    --font--content: 'Lexend Deca', sans-serif;
+    --font--title: 'Big Shoulders Display',sans-serif;
+
+    /*Fonts weights*/
+    --font--md: 400;
+    --font--xl: 700;
+}
+
+html{
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+img, svg{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    border: none;
+    overflow: none;
+    cursor: pointer;
+}
+
+.app-web{
+    padding: 30px;
+    display: grid;
+    place-content: center;
+
+}
+
+.tarjet-item{
+    min-width: 280px;
+    width: 290px;
+    height: auto;
+    padding: 30px;
+    display: grid;
+    row-gap: 1.5rem;
+    
+}
+
+.tarjet-1{
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.tarjet-2{
+    background-color: var(--dark-cyan);
+}
+
+.tarjet-3{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+h2{
+    font-family: var(--font--title);
+    font-weight: var(--font--xl);  
+    color: var(--very-light-gray);
+}
+
+p{
+    font-family: var(--font--content);
+    font-weight: var(--font--md);
+    color: var(--transparent-white);
+}
+
+button{
+    padding: 15px;
+    width: 120px;
+    border-radius: 30px;
+    font-family: var(--font--content);
+    background-color: var(--very-light-gray);
+}
+
+.button-color1{
+    color: var(--bright-orange);
+}
+
+.button-color2{
+    color: var(--dark-cyan);
+}
+
+.button-color3{
+    color: var(--very-dark-cyan);
+}
+
+@media(min-width: 765px){
+    body{
+        display: grid;
+        place-content: center;
+    }
+    .app-web{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tarjet-1{
+        border-radius: 10px 0 0 0;
+    }
+    .tarjet-2{
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+@media(min-width:1440px){
+    .app-web{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tarjet-1{
+        border-radius: 10px 0 0 10px;
+    }
+    .tarjet-2{
+        border-radius: 0;
+    }
+    .tarjet-3{
+        border-radius: 0 10px 10px 0;
+    }
+}
