@@ -48,16 +48,14 @@ button{
 }
 
 .app-web{
-    padding: 30px;
+    min-width: 375px;
+    padding: 20px;
     display: grid;
     place-content: center;
-
 }
 
 .tarjet-item{
-    min-width: 280px;
-    width: 290px;
-    height: auto;
+    
     padding: 30px;
     display: grid;
     row-gap: 1.5rem;
@@ -88,6 +86,7 @@ p{
     font-family: var(--font--content);
     font-weight: var(--font--md);
     color: var(--transparent-white);
+    font-size: 15px;
 }
 
 button{
@@ -111,6 +110,7 @@ button{
 }
 
 @media(min-width: 765px){
+
     body{
         display: grid;
         place-content: center;
@@ -118,6 +118,8 @@ button{
     .app-web{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-width: 720px;
+        place-content: center;
     }
     .tarjet-1{
         border-radius: 10px 0 0 0;
@@ -125,9 +127,10 @@ button{
     .tarjet-2{
         border-radius: 0 10px 10px 0;
     }
+    
 }
 
-@media(min-width:1440px){
+@media(min-width:1040px){
     .app-web{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
